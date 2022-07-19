@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf=8">
+    <title>My HTML Page</title>
+    <style>
+        #main {
+            background-color: grey;
+            width: 800px;
+            height: 200px;
+            margin: 20px;
+            position: relative;
+            overflow: auto;
+        }
+
+        #blue {
+            background-color: rgb(77, 171, 184);
+            top: 6.5px;
+            left: 10px;
+        }
+
+        #orange {
+            /* background-color:orange; */
+            background-color: orange;
+            top: 15.5px;
+            left: 20px;
+        }
+
+
+        p {
+            margin: 200px;
+        }
+
+        .innerbox:nth-child(2) {
+            background-color: rgb(223, 200, 157);
+        }
+
+        @media screen and (max-width: 600px){
+            #orange {
+                background-color: green;
+            }
+
+            p {
+            margin: 0px;
+        }
+        }
+
+        
+
+        .innerbox {
+            width: 200px;
+            height: 200px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div id="main">
+            <div id="blue" class="innerbox"></div>
+
+            <div id="orange" class="innerbox"></div>
+        </div>
+
+        <p>
+            Programming means telling a computer what to do and how to do that thing you told it to do. It involves providing well thought-out, methodogical instructions for your computer to read and execute. You have to break down large tasks into smaller ones. And you keep repeating that process of breaking something down into smaller tasks until you reach a point where you don’t need to tell the computer what to do anymore – it already knows how to do that task.
+            The essence of programming is the process of problem solving, complex thinking, attention to detail, and reasoning – all using a computer.
+        </p>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
