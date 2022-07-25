@@ -16,6 +16,13 @@
     alt: "";
     height: 200px;
     width: 200px;
+
+}
+
+.image2 img {
+    alt: "";
+    height: 200px;
+    width: 200px;
 }
 
 .image1 {
@@ -25,3 +32,12 @@
     margin-left: 25px;
     padding: 0px;
 }
+
+.image2 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0px;
+}
+
