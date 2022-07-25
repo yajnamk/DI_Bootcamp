@@ -6,6 +6,10 @@
 
 .image {
     display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0px;
 }
 
 .image1 img {
@@ -16,4 +20,8 @@
 
 .image1 {
     display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0px;
 }
