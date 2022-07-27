@@ -11,19 +11,22 @@
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-columns: 1fr 3fr;
-    grid-column-gap: 16px;
+    grid-column-gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 50px;
 }
 
 .first_section {
     display: block;
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
+    background-color: rgba(211, 208, 208, 0.402);
 }
 
 .second_section {
     margin-left: 20px;
     margin-right: 70px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .fonts {
@@ -39,9 +42,14 @@
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    padding-top: 0px;
+    padding-top: 100px;
 /*below to center*/
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom:100px;
+}
+
+.Details {
+    text-align: center;
 }
