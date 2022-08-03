@@ -7,23 +7,55 @@
           background: yellow;
           color: red;
         }
+
+        #container {
+          border: 2px solid black;
+          width: 100%;
+          height: 70px;
+          display: block;
+          background: yellow;
+          color: red;
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        #clear {
+            background-color: rgba(0, 0, 0, 0.692);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+
+
         </style>
 
     </head>
 
 
     <body>
-        <div id="container">Hello World</div>
+        <div id="container">
+            <p>Hello World</p>
+        </div>
         <br>
         <button id="clear">Clear Interval</button>
     </body>
 
     <script>
-        function sayHi(phrase, who) {
-        alert( phrase + ', ' + who );
-        }
-        
-        let mytimer = setTimeout(sayHi, 200, "Hello World!" "..");
+       
+
+        var clear = setInterval(function() {
+            alert('hello world');
+        }, 2000);
+
+        $('#stop').click(function() {
+            clearInterval(clear);
+        });
+
     </script>
 
 
