@@ -6,7 +6,7 @@
                 border: 2px solid black;
                 width: 100%;
                 height: 70px;
-                               
+                             
             }
 
         </style>
@@ -14,17 +14,54 @@
 
     <body>
         <div class="banner">
-            <p>The Sales Ends in 10 Mins!...</p>
+            <p>The Sales Ends in <span id="countdown">10</span> seconds!...</p>
         </div>
     </body>
 
     <script> 
 
-        function sayHi(phrase, who) {
-        alert( phrase + ', ' + who );
-        }
+    
+            let timeremaining = 10;
 
-        let mytimer = setTimeout(sayHi, 5000, "The Sales Ends in", "10 Mins!");
+            var countdown = document.getElementById("countdown")
+
+            var countItDown = function () {
+                countdown.textContent = parseFloat(timeremaining)
+                if (timeremaining > 0) {
+                timeremaining -= 1;   
+                } else {
+                window.clearInterval();
+            }
+        }
+            window.setInterval(countItDown, 1000);
+
+
+// OR
+
+            // let timeremaining = 10;
+
+            // function displayBanner() {
+            //     let banner = document.getElementsByClassName("banner")[0]
+            // }
+            // banner.style.display = "block"
+            // banner.firstElementChild.timerHTML = "The Sales Ends in" + "10 seconds!"
+
+            // let timer = setInterval(displayBanner,1000)
+       
+        //function displayBanner() {
+            //let banner = document.getElementsByClassName("banner")[0]
+            //banner.style.display = "block"
+       // }
+
+       // setTimeout(displayBanner,5000)
+
+        
+// Question 1        
+        //function sayHi(phrase, who) {
+        //alert( phrase + ', ' + who );
+        //}
+        
+       // let mytimer = setTimeout(sayHi, 1000, "The Sales Ends in 10 seconds!", "..");
         
         </script>
 

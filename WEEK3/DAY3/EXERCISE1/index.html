@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            ul li {
+                font-size: 30px;
+                border: 2px solid black;
+                margin: 20px;
+                padding: 20px;
+            }
+
+        </style>
+    </head>
+
+
+<body>
+    <h1>Table 1</h1>
+
+    <ul class="table1">
+        <li draggable="true">Nayar</li>
+        <li draggable="true">Jayesh</li>
+    </ul>
+
+    <h1>Table 2</h1>
+
+    <ul class="table2">
+        <li draggable="true" id="avishek">Avishek</li>
+        <li draggable="true" id="vidhipriya">Vidhipriya</li>
+        <li draggable="false" id="yajna">Yajna</li>
+    </ul>
+</body>
+
+<script>
+    let li_table2 = document.getElementsByClassName("table2")[0].children
+    // let li_table2 = document.querySelectorAll("table2 li")
+
+    for (let li of li_table2){
+        li.style.backgroundColor = "Red"
+        li.addEventListener("dragstart", "ondragstart")
+    }
+
+    function ondragstart(e) {
+        console.log(e.target.innerHTML + "is moving from Id" + e.target)
+        e.dataTransfer.setData("text/plain", e.target.id)
+    }
+
+    let ul.table1 = document.getElementsByClassName("table1")[0]
+    ul.table1.addEventListener("dragover", function(e)) {
+        e.preventDefault()
+        e.target.style.backgroundcolor = "green"
+        console.log("we have a li onver table 1")
+    }
+</script>
+</html>
