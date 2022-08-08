@@ -30,8 +30,6 @@
             font-size: 16px;
         }
 
-
-
         </style>
 
     </head>
@@ -46,16 +44,15 @@
     </body>
 
     <script>
-       
+        function sayHi(phrase, who) {
+        alert( phrase + ', ' + who );
+        }
+        
+        let mytimer = setTimeout(sayHi, 200, "Hello World!", "..");
 
-        var clear = setInterval(function() {
-            alert('hello world');
-        }, 2000);
-
-        $('#stop').click(function() {
-            clearInterval(clear);
-        });
-
+        function stop() {
+            clearTimeout(t);
+        }
     </script>
 
 
