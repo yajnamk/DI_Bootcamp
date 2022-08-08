@@ -1,0 +1,34 @@
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px 35px;
+    height: 50px;
+    position: relative;
+    
+}
+
+.logo {
+    position: absolute;
+    font-size: 50px;
+}
+
+ul.main {
+    position: absolute;
+    right: 0px;    
+    padding: 0 35px;
+}
+
+ul.main li {
+    display: inline-block;
+}
+
+#OURPRODUCTS {
+    color: white;
+}
+
+#Login {
+    color: white;
+}
+#Signup {
+    color: white;
+}

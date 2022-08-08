@@ -1,0 +1,187 @@
+.image img {
+    alt: "";
+    height: 200px;
+    width: 200px;
+}
+
+.image {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0px;
+    transition: 0.9s;
+}
+
+.image1 img {
+    alt: "";
+    height: 200px;
+    width: 200px;
+
+}
+
+.image2 img {
+    alt: "";
+    height: 200px;
+    width: 200px;
+}
+
+.image1 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0px;
+}
+
+.image2 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 0px;
+}
+
+.new {
+    background-color: rgba(5, 76, 5, 0.759);
+    width: 38px;
+    height: 35px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 2.9;
+    position: absolute;
+    left: 35px;
+    margin-top: 7px;
+}
+
+.discount {
+    background-color: red;
+    width: 38px;
+    height: 35px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 2.9;
+    position: absolute;
+    left: 190px;
+    margin-top: 7px;
+    
+}
+
+.new2 {
+    background-color: rgba(5, 76, 5, 0.759);
+    width: 38px;
+    height: 35px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 2.9;
+    position: absolute;
+    left: 265px;
+    margin-top: 5px;
+}
+
+.discount2 {
+    background-color: red;
+    width: 38px;
+    height: 35px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 2.9;
+    position: absolute;
+    left: 420px;
+    margin-top: 7px;   
+}
+
+.new3 {
+    background-color: rgba(5, 76, 5, 0.759);
+    width: 38px;
+    height: 35px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 2.9;
+    position: absolute;
+    left: 495px;
+    margin-top: 7px;
+}
+
+.discount3 {
+    background-color: red;
+    width: 38px;
+    height: 35px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 2.9;
+    position: absolute;
+    left: 650px;
+    margin-top: 7px;   
+}
+
+.labels {
+    font-weight: bold;
+}
+
+.name {
+    font-size: 14pxs;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+}
+
+.cart {
+    background-color: white;
+    color: rgba(6, 67, 6, 0.277);
+    font-size: 14px;
+    font-weight: bold;
+    border-color: rgba(103, 146, 103, 0.73);
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+}
+
+.price {
+    color: rgba(40, 61, 40, 0.846);
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+span {
+    color: rgba(68, 97, 68, 0.668);
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+#OURPRODUCTS {
+    padding-bottom: 2px;
+    border-bottom: 2px white;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: auto 50px;
+        overflow: auto;
+    }
+
+    .products {
+        display: block;
+    }
+
+    .logo {
+        font-size: 65px;
+    }
+}
