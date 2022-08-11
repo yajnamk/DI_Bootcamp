@@ -17,14 +17,20 @@ def is_even(num):
     else:
         return False, f"{num} is odd"
 
-x = hello_world("Pragassen", 24, "FR")
-print(x)
-hello_world(name="Yajna", language="FR")
-hello_world(language="Kreole")
-hello_world() #this will print hello world by default.
+def is_list_even(list):
+    for number in list: #1 , 3 , 4 , 7 , 8
+        print(is_even(number)[1])
 
-print(country) #Mauritius
+# x = hello_world("Pragassen", 24, "FR")
+# print(x)
+# hello_world(name="Yajna", language="FR")
+# hello_world(language="Kreole")
+# hello_world() #this will print hello world by default.
 
-x = print(is_even(2))
-print(x)
-print(is_even(15))
+# print(country) #Mauritius
+
+# x = print(is_even(2))
+# print(x)
+# print(is_even(15))
+
+is_list_even([1, 3, 4, 7, 8])
