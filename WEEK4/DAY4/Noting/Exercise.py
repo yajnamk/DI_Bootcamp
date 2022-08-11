@@ -1,7 +1,5 @@
-def is_less_than_4
-
-people = ["Rick", "Morty", "Beth", "Jerry", "Snowball"]
-map_object = map(is_less_than_people, people)
+persons = ["Rick", "Morty", "Beth", "Jerry", "Snowball"]
+four_letter = filter(lambda person: len(person)<=4, persons)
 
 
-print(list(map_object))
+print(list(four_letter))
