@@ -29,8 +29,9 @@ print(brand_dict['major_color']['US'])
 print(len (brand_dict))
 
 more_on_Zara = {
-    "creation_date":1975
-    "number_stores:1000"
+    "creation_date":1975,
+    "number_stores":1000
 }
 
-brand_dict.update
+brand_dict.update(more_on_zara)
+print(brand_dict[number_of_stores])
