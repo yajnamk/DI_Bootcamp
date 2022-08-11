@@ -1,8 +1,11 @@
 country = "Mauritius"
+things_I_like_to_eat = ["Pizza", "Burger"]
 
 def hello_world(name="world", age="unknown", language="EN"):
     global country #will take the country inside the function #Rodrigues
     country="Rodrigues"
+    eat.append("sushi")
+    print(eat, "inside function")
     if(language=="EN"):
         string = f"hello {name}. Age is {age}. And I live in {country}" #Rodrigues
     elif(language=="FR"):
@@ -11,15 +14,15 @@ def hello_world(name="world", age="unknown", language="EN"):
         string = "language is not not supported"
     return string
 
-def is_even(num):
-    if num%2 == 0:
-        return True, f"{num} is even"
-    else:
-        return False, f"{num} is odd"
+# def is_even(num):
+#     if num%2 == 0:
+#         return True, f"{num} is even"
+#     else:
+#         return False, f"{num} is odd"
 
-def is_list_even(list):
-    for number in list: #1 , 3 , 4 , 7 , 8
-        print(is_even(number)[1])
+# def is_list_even(list):
+#     for number in list: #1 , 3 , 4 , 7 , 8
+#         print(is_even(number)[1])
 
 # x = hello_world("Pragassen", 24, "FR")
 # print(x)
@@ -33,4 +36,8 @@ def is_list_even(list):
 # print(x)
 # print(is_even(15))
 
-is_list_even([1, 3, 4, 7, 8])
+# is_list_even([1, 3, 4, 7, 8])
+
+print(hello_world(name="Yajna", eat=things_I_like_to_eat.copy()))
+print(country) #a funtion will not change a primitive variable 
+print(things_I_like_to_eat) #a function will change the list itself

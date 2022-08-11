@@ -10,7 +10,7 @@ brand_dict={
     "international_competitors": ["Gap", "H&M", "Benetton"],
     "number_stores": 7000
     "major_color":
-      { "France": "Blue",
+      {"France": "Blue",
         "Spain": "red",
         "US": "pink, green"}}
 
