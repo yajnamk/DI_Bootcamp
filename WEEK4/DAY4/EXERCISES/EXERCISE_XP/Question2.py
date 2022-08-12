@@ -4,4 +4,4 @@ def favorite_book(title):
 
 favorite_book('The Bridgerton')
 
-print("favorite_book)"
+print("favorite_book")
