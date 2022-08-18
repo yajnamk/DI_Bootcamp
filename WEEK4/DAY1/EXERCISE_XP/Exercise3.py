@@ -1,17 +1,5 @@
-from pickle import FALSE, TRUE
-
-
->>> 5 < 3
-FALSE
-
->>> 3 == 3
-TRUE
-
->>> 3 == "3"
-False
-
->>> "3" > 3
-False
-
->>> "Hello" == "hello"
-FALSE
+print(5 < 3)  #False
+print(3 == 3)  #True
+print(3 == "3")  #False
+#print("3" > 3) #Error
+print("Hello" == "hello", "\n")  #False

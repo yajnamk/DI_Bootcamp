@@ -1,11 +1,9 @@
 class Currency:
     def __init__(self, currency, amount):
-        self.currency = currency
+        self.currency = str(currency)
         self.amount = amount
+        print(f"{self.currency} {self.amount}")
 
-    def __call__(self):
-        print('currency:{}, amount: {}'.format(self.currency, self.amount))
-
-c1 = Currency('dollar', 5)
-
-print(c1)
+    def __str__(self):
+        return f'{self.currency} {self.amount}
+        
