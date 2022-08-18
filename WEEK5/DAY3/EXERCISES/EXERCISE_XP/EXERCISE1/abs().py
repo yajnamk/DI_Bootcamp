@@ -8,3 +8,6 @@ def cal_speed(dist, time):
 
 print(" The calculated Speed(km / hr) is :",
       cal_speed(abs(40.0), abs(2.0)))
+
+
+      
