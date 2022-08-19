@@ -1,0 +1,1 @@
+# Read all the file and return it as a list of strings. Then split each word

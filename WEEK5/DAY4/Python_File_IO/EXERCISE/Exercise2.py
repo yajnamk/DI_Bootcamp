@@ -1,0 +1,1 @@
+# Read only the 5th first characters of the file
