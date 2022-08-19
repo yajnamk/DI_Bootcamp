@@ -1,48 +1,48 @@
-import time
-board = { 1 : ' ', 2 : ' ', 3: ' ',
-   4 : ' ', 5 : ' ', 6 : ' ', 
-   7 : ' ', 8 : ' ', 9 : ' '}
-
-# Initialize variables
-count = 0			# counter to track number of filled slots
-winner = False		        # boolean to check if anyone won
-play = True			# boolen to check if the game should continue
-tie = False			# boolean to check if there is a tie
-curr_player = ''		# variable to store current player identifier
-player_details = []		# list to store player identifier and marker
-
-while play:
-	["execute game code"]
-
-def printBoard():
-  for i in board:
-   print( i, ':', board[i], ' ', end="")
-   if i%3 == 0:
-    print()
-
-def print_board():
-    """Function to print the board"""
-    for i in board:
-        print( i, ':', board[i], ' ', end='')
-        if i%3 == 0:
-            print()
+theBoard = {'1-1': ' ', '1-2': ' ', '1-3': ' ',
+            '2-1': ' ', '2-2': ' ', '2-3': ' ',
+            '3-1': ' ', '3-2': ' ', '3-3': ' '}
 
 
-def win_game(marker, player_id):
-    """Function to check for winning combination"""
-    if board[1] == marker and board[2] == marker and board[3] == marker or \
-    board[4] == marker and board[5] == marker and board[6] == marker or \
-    board[7] == marker and board[8] == marker and board[9] == marker or \
-    board[1] == marker and board[4] == marker and board[7] == marker or \
-    board[2] == marker and board[5] == marker and board[8] == marker or \
-    board[3] == marker and board[6] == marker and board[9] == marker or \
-    board[1] == marker and board[5] == marker and board[9] == marker or \
-    board[3] == marker and board[5] == marker and board[7] == marker:
+def win():
+  if theBoard['1-1'] == theBoard['1-2'] == theBoard['1-3'] != ' ':
+    return True
+  if theBoard['2-1'] == theBoard['2-2'] == theBoard['2-3'] != ' ':
+    return True
+  if theBoard['3-1'] == theBoard['3-2'] == theBoard['3-3'] != ' ':
+    return True
+  if theBoard['1-1'] == theBoard['2-1'] == theBoard['3-1'] != ' ':
+    return True
+  if theBoard['1-2'] == theBoard['2-2'] == theBoard['3-2'] != ' ':
+    return True
+  if theBoard['1-3'] == theBoard['2-3'] == theBoard['3-3'] != ' ':
+    return True
+  if theBoard['1-1'] == theBoard['2-2'] == theBoard['3-3'] != ' ':
+    return True
+  if theBoard['1-3'] == theBoard['2-2'] == theBoard['3-3'] != ' ':
+    return True
+  return False
+  
 
-        print_board()
-        time.sleep(1)
-        print("Player", player_id, "wins!")
-        return True
 
-    else:
-        return False
+
+def printBoard(board):
+    print("******************")
+    print("*  " + board['1-1'] + '  |  '+board['1-2']+'  | '+board['1-3'] + "  *")
+    print('* --- + --- + ---*')
+    print("*  "+board['2-1'] + '  |  '+board['2-2']+'  | ' + board['2-3']+"  *")
+    print("* --- + --- + ---*")
+    print("*  "+board['3-1'] + '  |  '+board['3-2']+'  | ' + board['3-3']+"  *")
+    print("******************")
+printBoard(theBoard)
+for x in range(9):
+  t = input("enter position in form 1-1 or 3-2 \n")
+  if theBoard[t] == " ":
+     theBoard[t] = "x" if x%2 ==0 else "o"
+  else:
+     print("Space already occupied, try another space \n")  
+  printBoard(theBoard)
+  if  win() :
+    print("you won")
+    break
+else: 
+  print("It's a tie")
