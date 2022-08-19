@@ -1,3 +1,4 @@
-f = open('nameslist.txt')
-nameslist_txt = f.read
+
+f = open("nameslist.txt", "a")
+
 f.close()
